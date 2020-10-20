@@ -1,2 +1,2 @@
-# contact-keeper-api
-API for the second project on the React course: Contact Keeper.
+# Contact Keeper API
+API for the second project on the React course by Brad Traversy: Contact Keeper.
