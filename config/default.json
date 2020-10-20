@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://ckusr:qnPnQB8Wk2Ny3Ux@contact-keeper.igqga.azure.mongodb.net/contact-keeper?retryWrites=true&w=majority",
+  "jwtSecret": "KQ#$Vjt_kzjwR3T/"
+}
