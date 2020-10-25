@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 const { check, validationResult } = require('express-validator');
 const { hashStr } = require('../outils/outils');
