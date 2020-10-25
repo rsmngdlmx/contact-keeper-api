@@ -32,4 +32,14 @@ const logUser = async (req, res) => {
   }
 };
 
-module.exports = { validations, validateFields, logUser };
+const getUser = async (req, res) => {
+  try {
+    const user = await User.findById(req.user.id).select('-password');
+    res.json(user);
+  } catch (err) {
+    console.log(err.message);
+    res.status(500).json({ msj: 'Server error.' });
+  }
+};
+
+module.exports = { validations, validateFields, logUser, getUser };
