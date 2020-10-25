@@ -7,7 +7,7 @@ module.exports = (req, res, next) => {
   const token = req.header('x-auth-token');
 
   if (!token) {
-    return res.status(401).json({ msj: 'The token is missing.' });
+    return res.status(401).json({ msg: 'The token is missing.' });
   }
 
   try {
@@ -15,6 +15,6 @@ module.exports = (req, res, next) => {
     req.user = decoded.user;
     next();
   } catch (err) {
-    return res.status(401).json({ msj: 'Invalid token.' });
+    return res.status(401).json({ msg: 'Invalid token.' });
   }
 };
